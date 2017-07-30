@@ -51,7 +51,7 @@ UKF::UKF() {
 
     is_initialized_ = false;
     time_us_ = 0.0;
-    n_x_ = 0.0;
+    n_x_ = 5;
     n_aug_ = 7;
     lambda_ = 3 - n_x_;
     Xsig_pred_ = MatrixXd(n_x_, 2 * n_aug_ + 1);
